@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en" itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no"><!-- ////////////// Mobile title color ////////////// -->
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <title>Select - Doit UI Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><!-- ////////////// CSS Include ////////////// -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/base16/materia.min.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/main.css"><!-- ////////////// FAVICON ////////////// -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="/assets/js/dark-mode.js"></script>
+  </head>
+  <body>
+    <div class="app-ui__nav shadow-sm">
+      <header class="app-ui__header p-2 pr-0 h-100%">
+        <div class="app-ui__logo-wrapper mb-2"><a class="app-ui__logo" href="/">
+            <svg width="96" height="50" viewbox="0 0 66 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M33.112 35.256C31.3627 35.256 29.784 34.8827 28.376 34.136C26.9893 33.3893 25.8907 32.3227 25.08 30.936C24.2907 29.5493 23.896 27.928 23.896 26.072C23.896 24.2373 24.3013 22.6267 25.112 21.24C25.9227 19.832 27.032 18.7547 28.44 18.008C29.848 17.2613 31.4267 16.888 33.176 16.888C34.9253 16.888 36.504 17.2613 37.912 18.008C39.32 18.7547 40.4293 19.832 41.24 21.24C42.0507 22.6267 42.456 24.2373 42.456 26.072C42.456 27.9067 42.04 29.528 41.208 30.936C40.3973 32.3227 39.2773 33.3893 37.848 34.136C36.44 34.8827 34.8613 35.256 33.112 35.256ZM33.112 30.52C34.1573 30.52 35.0427 30.136 35.768 29.368C36.5147 28.6 36.888 27.5013 36.888 26.072C36.888 24.6427 36.5253 23.544 35.8 22.776C35.096 22.008 34.2213 21.624 33.176 21.624C32.1093 21.624 31.224 22.008 30.52 22.776C29.816 23.5227 29.464 24.6213 29.464 26.072C29.464 27.5013 29.8053 28.6 30.488 29.368C31.192 30.136 32.0667 30.52 33.112 30.52ZM48.111 15.288C47.151 15.288 46.3617 15.0107 45.743 14.456C45.1457 13.88 44.847 13.176 44.847 12.344C44.847 11.4907 45.1457 10.7867 45.743 10.232C46.3617 9.656 47.151 9.368 48.111 9.368C49.0497 9.368 49.8177 9.656 50.415 10.232C51.0337 10.7867 51.343 11.4907 51.343 12.344C51.343 13.176 51.0337 13.88 50.415 14.456C49.8177 15.0107 49.0497 15.288 48.111 15.288ZM50.831 17.144V35H45.359V17.144H50.831ZM64.7485 30.36V35H61.9645C59.9805 35 58.4338 34.52 57.3245 33.56C56.2152 32.5787 55.6605 30.9893 55.6605 28.792V21.688H53.4845V17.144H55.6605V12.792H61.1325V17.144H64.7165V21.688H61.1325V28.856C61.1325 29.3893 61.2605 29.7733 61.5165 30.008C61.7725 30.2427 62.1992 30.36 62.7965 30.36H64.7485Z" fill="rgba(var(--color-contrast-high))"></path>
+              <g clip-path="url(#clip0)">
+                <path d="M18.7989 3.22975C17.2323 4.02248 15.9487 5.16076 15.9184 7.0003C15.8376 11.5738 15.9184 16.1472 15.9386 21.056C17.0201 20.4869 17.768 20.0804 18.5361 19.6942C18.9 19.5112 19.2537 19.308 19.5771 19.0742C19.8904 18.8506 20.1835 18.5965 20.4362 18.3018C20.6788 18.0172 20.8809 17.6819 21.0123 17.3363C21.0527 17.2347 21.0932 17.1229 21.1134 17.0111C21.1336 16.8993 21.1437 16.7977 21.1437 16.6859C21.1437 16.6757 21.1437 16.6554 21.1437 16.6452C21.1437 16.6249 21.1437 16.6147 21.1437 16.5944C21.1437 16.5741 21.1437 16.5639 21.1437 16.5436C21.1437 16.5232 21.1437 16.5131 21.1437 16.4928C21.1437 16.4724 21.1437 16.4521 21.1437 16.4318C21.1437 16.4115 21.1437 16.3911 21.1437 16.3708C21.1437 16.3505 21.1437 16.3301 21.1437 16.3098C21.1437 16.2895 21.1437 16.2692 21.1437 16.2387C21.1437 16.2184 21.1437 16.1879 21.1437 16.1675C21.1437 16.1472 21.1437 16.1167 21.1437 16.0964C21.1437 16.0659 21.1437 16.0456 21.1437 16.0253C21.1437 15.9948 21.1437 15.9744 21.1437 15.9439C21.1437 15.9135 21.1437 15.8931 21.1437 15.8626C21.1437 15.8321 21.1437 15.8017 21.1437 15.7813C21.1437 15.7508 21.1437 15.7204 21.1437 15.6899C21.1437 15.6594 21.1437 15.6289 21.1437 15.5984C21.1437 15.5679 21.1437 15.5374 21.1437 15.5069C21.1437 15.4764 21.1437 15.4459 21.1437 15.4155C21.1437 15.385 21.1437 15.3545 21.1437 15.3138C21.1437 15.2833 21.1437 15.2427 21.1437 15.2122C21.1437 15.1817 21.1437 15.141 21.1437 15.1106C21.1437 15.0801 21.1437 15.0394 21.1437 15.0089C21.1437 14.9683 21.1437 14.9378 21.1437 14.8971C21.1437 14.8565 21.1437 14.826 21.1437 14.7853C21.1437 14.7447 21.1437 14.7142 21.1437 14.6735C21.1437 14.6329 21.1437 14.5922 21.1437 14.5617C21.1437 14.5211 21.1437 14.4804 21.1437 14.4398C21.1437 14.3991 21.1437 14.3585 21.1437 14.3178C21.1437 14.2772 21.1437 14.2365 21.1437 14.1959C21.1437 14.1552 21.1437 14.1146 21.1437 14.0739C21.1437 14.0333 21.1437 13.9926 21.1437 13.952C21.1437 13.9113 21.1437 13.8706 21.1437 13.8198C21.1437 13.7792 21.1437 13.7284 21.1437 13.6877C21.1437 13.6471 21.1437 13.5962 21.1437 13.5556C21.1437 13.5149 21.1437 13.4641 21.1437 13.4235C21.1437 13.3828 21.1437 13.332 21.1437 13.2913C21.1437 13.2507 21.1437 13.1999 21.1437 13.1592C21.1437 13.1084 21.1437 13.0678 21.1437 13.0169C21.1437 12.9661 21.1437 12.9255 21.1437 12.8746C21.1437 12.8238 21.1437 12.7832 21.1437 12.7324C21.1437 12.6815 21.1437 12.6409 21.1437 12.5901C21.1437 12.5393 21.1437 12.4986 21.1437 12.4478C21.1437 12.397 21.1437 12.3563 21.1437 12.3055C21.1437 12.2547 21.1437 12.2039 21.1437 12.1632C21.1437 12.1124 21.1437 12.0616 21.1437 12.0209C21.1437 11.9701 21.1437 11.9193 21.1437 11.8685C21.1437 11.8177 21.1437 11.7669 21.1437 11.716C21.1437 11.6652 21.1437 11.6144 21.1437 11.5636C21.1437 11.5128 21.1437 11.462 21.1437 11.4111C21.1437 11.3603 21.1437 11.3095 21.1437 11.2587C21.1437 11.2079 21.1437 11.1571 21.1437 11.1062C21.1437 11.0554 21.1437 11.0046 21.1437 10.9538C21.1437 10.903 21.1437 10.8522 21.1437 10.8014C21.1437 10.7505 21.1437 10.6997 21.1437 10.6489C21.1437 10.5981 21.1437 10.5473 21.1437 10.4965C21.1437 10.4456 21.1437 10.3948 21.1437 10.344C21.1437 10.2932 21.1437 10.2424 21.1437 10.1916C21.1437 10.1407 21.1437 10.0899 21.1437 10.0391C21.1437 9.98829 21.1437 9.93748 21.1437 9.88666C21.1437 9.83584 21.1437 9.78503 21.1437 9.73421C21.1437 9.6834 21.1437 9.63258 21.1437 9.58176C21.1437 9.53095 21.1437 9.48013 21.1437 9.42931C21.1437 9.3785 21.1437 9.32768 21.1437 9.27687C21.1437 9.22605 21.1437 9.17523 21.1437 9.12442C21.1437 9.0736 21.1437 9.02279 21.1437 8.97197C21.1437 8.92115 21.1437 8.87034 21.1437 8.81952C21.1437 8.76871 21.1437 8.71789 21.1437 8.66707C21.1437 8.61626 21.1437 8.56544 21.1437 8.51462C21.1437 8.46381 21.1437 8.41299 21.1437 8.36218C21.1437 8.31136 21.1437 8.26054 21.1437 8.20973C21.1437 8.15891 21.1437 8.1081 21.1437 8.05728C21.1437 8.00646 21.1437 7.95565 21.1437 7.90483C21.1437 7.85401 21.1437 7.8032 21.1437 7.75238C21.1437 7.70157 21.1437 7.65075 21.1437 7.59993C21.1437 7.54912 21.1437 7.4983 21.1437 7.44749C21.1437 7.39667 21.1437 7.34585 21.1437 7.29504C21.1437 7.24422 21.1437 7.19341 21.1437 7.14259C21.1437 7.09177 21.1437 7.04096 21.1437 6.99014C21.1437 6.93932 21.1437 6.88851 21.1437 6.84786C21.1437 6.79704 21.1437 6.74622 21.1437 6.70557C21.1437 6.65475 21.1437 6.60394 21.1437 6.56329C21.1437 6.51247 21.1437 6.47182 21.1437 6.421C21.1437 6.37018 21.1437 6.32953 21.1437 6.27871C21.1437 6.2279 21.1437 6.18725 21.1437 6.13643C21.1437 6.08561 21.1437 6.04496 21.1437 5.99414C21.1437 5.94333 21.1437 5.90268 21.1437 5.85186C21.1437 5.81121 21.1437 5.76039 21.1437 5.71974C21.1437 5.67908 21.1437 5.62827 21.1437 5.58762C21.1437 5.54696 21.1437 5.49615 21.1437 5.45549C21.1437 5.41484 21.1437 5.36402 21.1437 5.32337C21.1437 5.28272 21.1437 5.2319 21.1437 5.19125C21.1437 5.1506 21.1437 5.10994 21.1437 5.05913C21.1437 5.01847 21.1437 4.97782 21.1437 4.92701C21.1437 4.88635 21.1437 4.8457 21.1437 4.80505C21.1437 4.76439 21.1437 4.72374 21.1437 4.68309C21.1437 4.64244 21.1437 4.60178 21.1437 4.56113C21.1437 4.52048 21.1437 4.47982 21.1437 4.43917C21.1437 4.39852 21.1437 4.35787 21.1437 4.31721C21.1437 4.27656 21.1437 4.23591 21.1437 4.20542C21.1437 4.16476 21.1437 4.13427 21.1437 4.09362C21.1437 4.05297 21.1437 4.02248 21.1437 3.98183C21.1437 3.94117 21.1437 3.91068 21.1437 3.87003C21.1437 3.83954 21.1437 3.79889 21.1437 3.7684C21.1437 3.73791 21.1437 3.69726 21.1437 3.66677C21.1437 3.63628 21.1437 3.59562 21.1437 3.56513C21.1437 3.53464 21.1437 3.50415 21.1437 3.4635C21.1437 3.01632 21.1437 2.55897 21.1437 2.11179C21.1437 2.09147 21.1437 2.06098 21.1437 2.04065C20.224 2.48783 19.5165 2.87403 18.7989 3.22975Z" fill="rgba(var(--color-primary))"></path>
+                <path d="M15.8982 25.1213C15.1503 28.9224 10.7841 30.5993 7.67116 28.2415C5.15453 26.3409 5.01303 22.3874 7.38817 20.3141C7.79244 19.9584 8.15629 19.7043 8.51004 19.5316C8.52014 22.2452 8.55047 24.9994 8.56057 27.8654C8.76271 27.7638 8.95474 27.6622 9.12656 27.5605C9.9149 27.1438 10.5314 26.8186 11.148 26.5035C12.5932 25.782 13.796 24.7555 13.8364 23.0684C13.9274 18.6067 13.8869 14.1349 13.8869 9.46997C13.8869 9.22605 13.8869 8.9923 13.8869 8.74838C12.9066 9.26671 12.1586 9.66307 11.4107 10.0493C9.92501 10.8014 8.70207 11.8583 8.55047 13.5353C5.12421 14.3585 2.53683 16.3505 1.00057 19.6942C-0.232474 22.3773 -0.333543 25.1722 0.717579 27.9366C2.94111 33.7906 9.20742 36.5346 14.9987 34.1666C15.2817 34.0447 15.5647 33.9227 15.8275 33.7804C18.0813 32.6218 20.0219 30.6603 20.79 28.2008C20.8911 27.8756 20.982 27.5504 21.0427 27.2251C21.1033 26.8999 21.1336 26.5849 21.1336 26.2495C21.1336 25.9446 21.1336 25.6397 21.1336 25.3348C21.1336 24.9181 21.1336 24.5116 21.1336 24.0949C21.1336 23.6578 21.1336 23.2107 21.1336 22.7736C21.1336 22.3773 21.1336 21.9911 21.1336 21.5947C21.1336 21.3305 21.1336 21.0662 21.1336 20.802C21.1336 20.7308 21.1336 20.6597 21.1336 20.5784C20.1836 21.0764 19.4559 21.4727 18.7181 21.8488C17.3132 22.5602 16.1206 23.5562 15.8982 25.1213Z" fill="rgba(var(--color-primary))"></path>
+              </g>
+              <defs>
+                <clippath id="clip0">
+                  <rect width="21.1538" height="33" fill="rgba(var(--color-contrast-high))" transform="translate(0 2)"></rect>
+                </clippath>
+              </defs>
+            </svg></a></div>
+        <nav class="sidenav">
+          <ul class="sidenav__list">
+            <li class="sidenav__item"><a class="sidenav__link radius-lg js-sidenav" href="#">
+                <svg class="icon sidenav__icon" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewbox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <line x1="144" y1="224" x2="112" y2="224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <path d="M122.97053,19.76275C103.97814,34.97686,40.45429,95.77187,96,192h64c54.39078-96.16-8.20388-156.9371-26.9971-172.20489A7.98387,7.98387,0,0,0,122.97053,19.76275Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                  <path d="M73.86661,111.36007,42.51644,148.98028a8,8,0,0,0-1.66373,6.85692l12.36292,55.63314a8,8,0,0,0,12.80706,4.51151L96,192" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                  <path d="M181.53142,110.63771l31.95214,38.34257a8,8,0,0,1,1.66373,6.85692l-12.36292,55.63314a8,8,0,0,1-12.80706,4.51151L160,192" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                  <circle cx="128" cy="96" r="12"></circle>
+                </svg><span class="sidenav__label text-sm">Overview</span><span class="icon sidenav__control">
+                  <svg class="icon" aria-hidden="true" fill="currentColor" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                    <path d="M8.12 9.29L12 13.17l3.88-3.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-4.59 4.59c-.39.39-1.02.39-1.41 0L6.7 10.7c-.39-.39-.39-1.02 0-1.41.39-.38 1.03-.39 1.42 0z"></path>
+                  </svg></span></a>
+              <ul class="sidenav__list">
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/"><span class="sidenav__label text-sm">Introduction</span></a></li>
+              </ul>
+            </li>
+            <li class="sidenav__item"><a class="sidenav__link radius-lg js-sidenav" href="#">
+                <svg class="icon sidenav__icon" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewbox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <line x1="104" y1="104" x2="104" y2="208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="32" y1="104" x2="224" y2="104" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <rect x="32" y="48" width="192" height="160" rx="8" stroke-width="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect>
+                </svg><span class="sidenav__label text-sm">Layout</span><span class="icon sidenav__control">
+                  <svg class="icon" aria-hidden="true" fill="currentColor" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                    <path d="M8.12 9.29L12 13.17l3.88-3.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-4.59 4.59c-.39.39-1.02.39-1.41 0L6.7 10.7c-.39-.39-.39-1.02 0-1.41.39-.38 1.03-.39 1.42 0z"></path>
+                  </svg></span></a>
+              <ul class="sidenav__list">
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/layout/breakpoints.html"><span class="sidenav__label text-sm">Breakpoints</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/layout/container.html"><span class="sidenav__label text-sm">Containers</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/layout/grid.html"><span class="sidenav__label text-sm">Grid</span></a></li>
+              </ul>
+            </li>
+            <li class="sidenav__item"><a class="sidenav__link radius-lg js-sidenav" href="#">
+                <svg class="icon sidenav__icon" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewbox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <path d="M200.00039,224H55.99961A7.99981,7.99981,0,0,1,48,216V40a7.99981,7.99981,0,0,1,7.99961-8l96.00312,0L208,88V216A7.99981,7.99981,0,0,1,200.00039,224Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                  <polyline points="152 32 152 88 208.008 88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                  <line x1="96" y1="136" x2="160" y2="136" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="96" y1="168" x2="160" y2="168" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                </svg><span class="sidenav__label text-sm">Content</span><span class="icon sidenav__control">
+                  <svg class="icon" aria-hidden="true" fill="currentColor" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                    <path d="M8.12 9.29L12 13.17l3.88-3.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-4.59 4.59c-.39.39-1.02.39-1.41 0L6.7 10.7c-.39-.39-.39-1.02 0-1.41.39-.38 1.03-.39 1.42 0z"></path>
+                  </svg></span></a>
+              <ul class="sidenav__list">
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/content/typography.html"><span class="sidenav__label text-sm">Typography</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/content/table.html"><span class="sidenav__label text-sm">Table</span></a></li>
+              </ul>
+            </li>
+            <li class="sidenav__item"><a class="sidenav__link radius-lg js-sidenav" href="#">
+                <svg class="icon sidenav__icon" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewbox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <rect x="32" y="48" width="192" height="160" rx="8" stroke-width="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect>
+                  <line x1="76" y1="96" x2="180" y2="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="76" y1="128" x2="180" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="76" y1="160" x2="180" y2="160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                </svg><span class="sidenav__label text-sm">Forms</span><span class="icon sidenav__control">
+                  <svg class="icon" aria-hidden="true" fill="currentColor" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                    <path d="M8.12 9.29L12 13.17l3.88-3.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-4.59 4.59c-.39.39-1.02.39-1.41 0L6.7 10.7c-.39-.39-.39-1.02 0-1.41.39-.38 1.03-.39 1.42 0z"></path>
+                  </svg></span></a>
+              <ul class="sidenav__list">
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/forms/form-control.html"><span class="sidenav__label text-sm">Form control</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/forms/select.html"><span class="sidenav__label text-sm">Select</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/forms/checks-radios.html"><span class="sidenav__label text-sm">Checks & radios</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/forms/layout.html"><span class="sidenav__label text-sm">Layout</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/forms/validation.html"><span class="sidenav__label text-sm">Validation</span></a></li>
+              </ul>
+            </li>
+            <li class="sidenav__item"><a class="sidenav__link radius-lg js-sidenav" href="#">
+                <svg class="icon sidenav__icon" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewbox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <rect x="48" y="48" width="64" height="64" stroke-width="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect>
+                  <rect x="144" y="48" width="64" height="64" stroke-width="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect>
+                  <rect x="48" y="144" width="64" height="64" stroke-width="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect>
+                  <rect x="144" y="144" width="64" height="64" stroke-width="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect>
+                </svg><span class="sidenav__label text-sm">Utilities</span><span class="icon sidenav__control">
+                  <svg class="icon" aria-hidden="true" fill="currentColor" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                    <path d="M8.12 9.29L12 13.17l3.88-3.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-4.59 4.59c-.39.39-1.02.39-1.41 0L6.7 10.7c-.39-.39-.39-1.02 0-1.41.39-.38 1.03-.39 1.42 0z"></path>
+                  </svg></span></a>
+              <ul class="sidenav__list">
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/utilities/background.html"><span class="sidenav__label text-sm">Background</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/utilities/borders.html"><span class="sidenav__label text-sm">Borders</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/utilities/colors.html"><span class="sidenav__label text-sm">Colors</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/utilities/display.html"><span class="sidenav__label text-sm">Display</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/utilities/flex.html"><span class="sidenav__label text-sm">Flex</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/utilities/interactions.html"><span class="sidenav__label text-sm">Interactions</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/utilities/position.html"><span class="sidenav__label text-sm">Position</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/utilities/shadows.html"><span class="sidenav__label text-sm">Shadows</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/utilities/sizing.html"><span class="sidenav__label text-sm">Sizing</span></a></li>
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/utilities/modifiers.html"><span class="sidenav__label text-sm">Modifiers</span></a></li>
+              </ul>
+            </li>
+            <li class="sidenav__item"><a class="sidenav__link radius-lg js-sidenav" href="#">
+                <svg class="icon sidenav__icon" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewbox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <path d="M224,177.32117V78.67873a8,8,0,0,0-4.07791-6.9726l-88-49.5a8,8,0,0,0-7.84418,0l-88,49.5A8,8,0,0,0,32,78.67873v98.64244a8,8,0,0,0,4.07791,6.97261l88,49.5a8,8,0,0,0,7.84418,0l88-49.5A8,8,0,0,0,224,177.32117Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                  <polyline points="222.897 74.626 128.949 128 33.108 74.617" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                  <line x1="128.94915" y1="127.99996" x2="128.01036" y2="234.82127" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                </svg><span class="sidenav__label text-sm">Components</span><span class="icon sidenav__control">
+                  <svg class="icon" aria-hidden="true" fill="currentColor" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                    <path d="M8.12 9.29L12 13.17l3.88-3.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-4.59 4.59c-.39.39-1.02.39-1.41 0L6.7 10.7c-.39-.39-.39-1.02 0-1.41.39-.38 1.03-.39 1.42 0z"></path>
+                  </svg></span></a>
+              <ul class="sidenav__list">
+                <li class="sidenav__item"><a class="sidenav__link radius-lg" href="/components/buttons.html"><span class="sidenav__label text-sm">Buttons</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="toggle-theme">
+          <ul class="radio-switch">
+            <li class="radio-switch__item">
+              <input class="radio-switch__input sr-only" id="switch-light" type="radio" name="switch-light-dark" value="" checked="">
+              <label class="radio-switch__label" for="switch-light">
+                <svg class="icon mr-1 icon--md" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewbox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <circle cx="128" cy="128" r="60" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle>
+                  <line x1="128" y1="36" x2="128" y2="28" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="62.94618" y1="62.94618" x2="57.28932" y2="57.28932" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="36" y1="128" x2="28" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="62.94618" y1="193.05382" x2="57.28932" y2="198.71068" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="128" y1="220" x2="128" y2="228" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="193.05382" y1="193.05382" x2="198.71068" y2="198.71068" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="220" y1="128" x2="228" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="193.05382" y1="62.94618" x2="198.71068" y2="57.28932" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                </svg><span>Light</span>
+              </label>
+            </li>
+            <li class="radio-switch__item">
+              <input class="radio-switch__input sr-only" id="switch-dark" type="radio" name="switch-light-dark" value="">
+              <label class="radio-switch__label" for="switch-dark">
+                <svg class="icon icon--md mr-1" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewbox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <path d="M216.66238,152.64951A92.03175,92.03175,0,0,1,103.35039,39.338l.00255.00078A92.01376,92.01376,0,1,0,216.66147,152.64624Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                </svg><span>Dark</span>
+              </label>
+              <div class="radio-switch__marker" aria-hidden="true"></div>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <main class="app-ui__main">
+      <div class="app-ui__body p-3">
+        <div class="text-component mb-4">
+          <h1>Select</h1>
+          <p class="text-md color-contrast-medium color-opacity-90%">Customize the native<code>&lt;input&gt;</code>                        with custom CSS that changes the element&rsquo;s initial appearance.</p>
+        </div>
+        <div class="card">
+          <div class="text-component mb-2">
+            <h4 class="text-md mt-0 color-opacity-90%">Default</h4>
+            <p class="color-opacity-90%">Custom <code>&lt;select&gt;</code> menus need only a custom class, <code>.form-select</code> to trigger the custom styles. Custom styles are limited to the <code>&lt;select&gt;</code> initial appearance and cannot modify the <code>&lt;option&gt;</code> due to browser limitations.</p>
+          </div>
+          <div class="bg radius-lg radius-bottom-right-0 radius-bottom-left-0 p-4">
+            <label class="form-label mb-1">Select:</label>
+            <div class="select icon-input right-icon w-25%">
+              <select class="select__input py-2 bg-white form-control w-100%">
+                <optgroup label="Group 1">
+                  <option value="0">Select option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                  <option value="5">Option 5</option>
+                </optgroup>
+              </select>
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewbox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+              </svg>
+            </div>
+          </div>
+          <pre class="mb-4"><code class="radius-top-right-0 radius-top-left-0" id="selectSnippet"></code></pre>
+          <div class="text-component mb-2">
+            <h4 class="text-md mt-0 color-opacity-90%">Custom dropdown</h4>
+            <p class="color-opacity-90%">Custom select with dropdown and you need the js code only when using the custom select. Default version does not require JS.</p>
+          </div>
+          <div class="bg radius-lg radius-bottom-right-0 radius-bottom-left-0 p-4">
+            <label class="form-label mb-1">Select:</label>
+            <div class="select js-select icon-input right-icon w-25%">
+              <button class="select__input py-2 bg-white form-control w-100%" aria-expanded="false"><span>Select option</span>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewbox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                </svg>
+              </button>
+              <ul class="option__list">
+                <li class="select__item" value="0"><span class="option__item--label">Select option</span></li>
+                <li class="select__item" value="1"> <span class="option__item--label">Option 1</span></li>
+                <li class="select__item" value="2"> <span class="option__item--label">Option 2</span></li>
+                <li class="select__item" value="3"> <span class="option__item--label">Option 3</span></li>
+                <li class="select__item" value="4"> <span class="option__item--label">Option 4</span></li>
+              </ul>
+            </div>
+          </div>
+          <pre class="mb-4"><code class="radius-top-right-0 radius-top-left-0" id="customselectSnippet"></code></pre>
+          <div class="text-component mb-2">
+            <h4 class="text-md mt-0 color-opacity-90%">Minimal Select</h4>
+            <p class="color-opacity-90%">Minimal custom select</p>
+          </div>
+          <div class="bg radius-lg radius-bottom-right-0 radius-bottom-left-0 p-4">
+            <label class="form-label mb-1">Select:</label>
+            <div class="select js-select icon-input right-icon minimal--select">
+              <button class="select__input inline-block w-100%" aria-expanded="false"><span>Select option</span>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewbox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                </svg>
+              </button>
+              <ul class="option__list">
+                <li class="select__item" value="0"><span class="option__item--label">Select option</span></li>
+                <li class="select__item" value="1"> <span class="option__item--label">Option 1</span></li>
+                <li class="select__item" value="2"> <span class="option__item--label">Option 2</span></li>
+                <li class="select__item" value="3"> <span class="option__item--label">Option 3</span></li>
+                <li class="select__item" value="4"> <span class="option__item--label">Option 4</span></li>
+              </ul>
+            </div>
+          </div>
+          <pre class="mb-4"><code class="radius-top-right-0 radius-top-left-0" id="minimalselectSnippet"></code></pre>
+        </div>
+      </div>
+      <script src="/assets/js/components/custom-select.js"></script>
+      <script type="text/javascript">
+        let selectSnippet =
+        	`	<label class="form-label mb-1">Select:</label>
+        <div class="select icon-input right-icon">
+        	<select class="select__input py-2 bg-white form-control w-100%">
+        		<optgroup label="Group 1">
+        			<option value="0">Select option</option>
+        			<option value="1">Option 1</option>
+        			<option value="2">Option 2</option>
+        		</optgroup>
+        		<optgroup label="Group 2">
+        			<option value="3">Option 3</option>
+        			<option value="4">Option 4</option>
+        			<option value="5">Option 5</option>
+        		</optgroup>
+        	</select>
+        	<span class="icon"></span>
+        </div>`
+        document.getElementById('selectSnippet').innerHTML = hljs.highlight(selectSnippet, {
+        	language: 'xml'
+        }).value
+        
+        let customselectSnippet =
+        	`	<label class="form-label mb-1">Select:</label>
+        <div class="select js-select icon-input right-icon">
+        	<button class="select__input py-2 bg-white form-control w-100%" aria-expanded="false"><span>Select option</span>
+        		<span class="icon"></span>
+        	</button>
+        	<ul class="option__list">
+        		<li class="select__item" value="0"><span class="option__item--label">Select option</span></li>
+        		<li class="select__item" value="1"> <span class="option__item--label">Option 1</span></li>
+        		<li class="select__item" value="2"> <span class="option__item--label">Option 2</span></li>
+        		<li class="select__item" value="3"> <span class="option__item--label">Option 3</span></li>
+        		<li class="select__item" value="4"> <span class="option__item--label">Option 4</span></li>
+        	</ul>
+        </div>`
+        document.getElementById('customselectSnippet').innerHTML = hljs.highlight(customselectSnippet, {
+        	language: 'xml'
+        }).value
+        
+        let minimalselectSnippet =
+        	`	<label class="form-label mb-1">Select:</label>
+        <div class="select js-select icon-input right-icon minimal--select">
+        	<button class="select__input inline-block w-100%" aria-expanded="false" value="0"><span>Select option</span>
+        		<span class="icon"></span>
+        	</button>
+        	<ul class="option__list">
+        		<li class="select__item" value="0"><span class="option__item--label">Select option</span></li>
+        		<li class="select__item" value="1"> <span class="option__item--label">Option 1</span></li>
+        		<li class="select__item" value="2"> <span class="option__item--label">Option 2</span></li>
+        		<li class="select__item" value="3"> <span class="option__item--label">Option 3</span></li>
+        		<li class="select__item" value="4"> <span class="option__item--label">Option 4</span></li>
+        	</ul>
+        </div>`
+        document.getElementById('minimalselectSnippet').innerHTML = hljs.highlight(minimalselectSnippet, {
+        	language: 'xml'
+        }).value
+      </script>
+    </main>
+    <!-- inject:js -->
+    <!-- endinject -->
+    <script src="/assets/js/scripts.js"></script>
+  </body>
+</html>
